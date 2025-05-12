@@ -9,14 +9,16 @@ Built for sysadmins, devs, and power users who want total control and zero bloat
 
 ## 💣 Features
 
-- 🔐 Auto-login with 2FA injection
+- 🔐 Auto-login with 2FA injection both browser extension and autom8er for Cisco VPN Client. I may do more clients if you request it.
+- All 100+ Python and Powershell scripts the App will be made up of will be uploaded too so power users can cherry pick what they prefer.
 - 🧼 One-click Windows 11 debloat
 - 🛡️ Background service suppression
-- 🚫 Xbox, Cortana, Edge removal
+- 🚫 Xbox, Cortana, Edge removal (mostly true, you can't remove it completely because then you break Windows functions)
 - 📋 Environment hardening and script automation
-- 🧠 Built-in system cleanup logic
+- 🧠 Built-in system cleanup logic, this is not only for removal of unwanted bloat/services that stalk you, this will cleanup your registery and C drive.
+- RAM Injected software/services, even encrypted and fragmented so not even an FBI forensic with your RAM frozen as an image will find anything you'd like to preserve for yourself!
+- Will be able to repair most Windows functions better than DISM or SFC. They've failed me too many times so I made my own repair function.
 
-## 🚀 Getting Started
 
 1. Clone the repo:
    ```bash
