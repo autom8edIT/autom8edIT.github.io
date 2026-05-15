@@ -102,7 +102,13 @@
       border-top: 1px solid #222;
       color: #555;
     }
-    a { color: #0078d7; text-decoration: none; }
+    a { color: #0078d7; text-decoration: underline; }
+    a:focus-visible,
+    .btn:focus-visible {
+      outline: 3px solid #0078d7;
+      outline-offset: 3px;
+      border-radius: 3px;
+    }
     code { font-family: monospace; background: #1a1a1a; padding: 0.2rem 0.4rem; border-radius: 4px; }
   </style>
 </head>
