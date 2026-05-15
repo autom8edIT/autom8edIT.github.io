@@ -22,7 +22,7 @@ Ditched online NPCs in favor of local, CUDA-accelerated PhD-level transcription.
 
 ## 🛡️ 4. BIOS Sovereignty (The God BIOS)
 Achieved total hardware control by bypassing OEM "Invisible ACLs."
-*   **ACPI 7 Transformation**: Forced the **Performance Server** profile at the binary level to unlock ultra-low-latency kernel scheduling (<0.1ms).
+*   **ACPI 7 Transformation**: Forced the **Performance Server** profile at the binary level to unlock ultra-low-latency kernel scheduling (`<0.1ms`).
 *   **ME Warden Nuke**: Set the **HAP (High Assurance Platform)** bit in the IFD to strip Intel ME of its authority over hardware power limits (ICCmax, PL4).
 *   **Hardware Bridge**: Used the **RSVD_2** physical toggle and custom **A5470.CAP** wrapping to bypass PCH Protected Range Registers.
 
