@@ -1,5 +1,5 @@
 # 🥒 Project GodBrain: Sovereign Intelligence Node
-**System:** RTX 4080 SUPER | LTSC 24H2 | Z790 Apex Encore
+**System:** Z790 Apex Encore with custom BIOS | 48GB DDR5 8200MT/s CL38 | RTX 4080 SUPER | Kingston KC3000 2TB | W11 IoT LTSC 24H2
 **Role:** Forensic AI Engineering & Hardware Sovereignty
 
 This manifest documents the transformation of a high-end workstation into a sovereign, forensic-grade intelligence laboratory. While others use "Bozo" cloud models with heavy ACLs and corporate filters, we have deployed a local, direct-connect brain architecture that obeys only its master.
@@ -7,8 +7,8 @@ This manifest documents the transformation of a high-end workstation into a sove
 ## 🚀 1. The Ghost Protocol (Zero-Trace Security)
 We have eliminated the "Technical Debt" of cleartext persistence. Your secrets and browsing history no longer exist on the SSD.
 *   **Ghost Vault**: A hardware-locked secret manager using Windows **DPAPI** and **XOR Memory Sharding**. Master keys exist only as scattered fragments in RAM.
-*   **Ghost-Tor (amnesia)**: A true ephemeral browsing environment. Decrypts an obfuscated container directly into a hidden **1GB RAMDrive (ImDisk)**. All traces vanish on reboot.
-*   **Secret Harvester**: Surgically redacted 97 cleartext credentials from the local repo and quarantined them into a secure, encrypted state.
+*   **Ghost-Apps (amnesia)**: A true ephemeral browsing environment. Decrypts an obfuscated container directly into a hidden **1GB RAMDrive (ImDisk)**. All traces vanish on reboot.
+*   **Secret Harvester**: All creds stored in encrypted vault in the RAM.
 
 ## 🔬 2. Forensic Scale & Speed (4080 SUPER Utilization)
 We proved that parameter density and high-speed VRAM crush "Edge" models in real-world engineering.
@@ -24,10 +24,11 @@ Ditched online NPCs in favor of local, CUDA-accelerated PhD-level transcription.
 Achieved total hardware control by bypassing OEM "Invisible ACLs."
 *   **ACPI 7 Transformation**: Forced the **Performance Server** profile at the binary level to unlock ultra-low-latency kernel scheduling (`<0.1ms`).
 *   **ME Warden Nuke**: Set the **HAP (High Assurance Platform)** bit in the IFD to strip Intel ME of its authority over hardware power limits (ICCmax, PL4).
-*   **Hardware Bridge**: Used the **RSVD_2** physical toggle and custom **A5470.CAP** wrapping to bypass PCH Protected Range Registers.
+*   **Hardware Bridge**: Used the BIOS flashback port to flash a custom 2107 BIOS with wrapping to bypass PCH Protected Range Registers.
 
 ## 🧠 5. The Shared Brain (Cross-Platform Parity)
 Established bi-directional intelligence sync between Windows (4080 SUPER) and MacBook Pro.
+*   **MongoDb**: Long term storage of everything so I can find anything created, modified, milestones etc.
 *   **Neo4j Aura Cloud**: Real-time synchronization of learned facts, milestones, and security states.
 *   **Consistency Engine**: Whether on the Mac or the PC, the team "knows" exactly what was discovered in the last session.
 
