@@ -1,169 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>autom8ed.it | Sovereign Intelligence Node</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #050505;
-      color: #e0e0e0;
-      line-height: 1.6;
-    }
-    header {
-      padding: 6rem 2rem 3rem;
-      text-align: center;
-      background: linear-gradient(180deg, #111 0%, #050505 100%);
-      border-bottom: 1px solid #222;
-    }
-    header h1 {
-      font-size: 3.5rem;
-      margin-bottom: 0.5rem;
-      letter-spacing: -1px;
-      color: #fff;
-    }
-    header p {
-      font-size: 1.4rem;
-      color: #888;
-      font-style: italic;
-      max-width: 800px;
-      margin: 0.5rem auto;
-    }
-    .status-badge {
-      display: inline-block;
-      padding: 0.25rem 0.75rem;
-      background-color: #1a1a1a;
-      border: 1px solid #333;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      color: #00ff41;
-      margin-top: 1rem;
-      font-family: monospace;
-    }
-    section {
-      padding: 3rem 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    section h2 {
-      font-size: 2.2rem;
-      color: #fff;
-      border-left: 4px solid #0078d7;
-      padding-left: 1rem;
-      margin-top: 3rem;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .card {
-      background-color: #111;
-      padding: 1.5rem;
-      border-radius: 8px;
-      border: 1px solid #222;
-      transition: transform 0.2s ease, border-color 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      border-color: #0078d7;
-    }
-    .card h3 {
-      margin-top: 0;
-      color: #00bfff;
-    }
-    .manifest-cta {
-      text-align: center;
-      padding: 4rem 2rem;
-      background-color: #0a0a0a;
-    }
-    .btn {
-      display: inline-block;
-      padding: 1rem 2rem;
-      background-color: #0078d7;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      font-size: 1.1rem;
-      transition: all 0.3s ease;
-    }
-    .btn:hover {
-      background-color: #005fa3;
-      box-shadow: 0 0 20px rgba(0,120,215,0.4);
-    }
-    footer {
-      text-align: center;
-      padding: 4rem 2rem;
-      font-size: 0.9rem;
-      border-top: 1px solid #222;
-      color: #555;
-    }
-    a { color: #0078d7; text-decoration: underline; }
-    a:focus-visible,
-    .btn:focus-visible {
-      outline: 3px solid #0078d7;
-      outline-offset: 3px;
-      border-radius: 3px;
-    }
-    code { font-family: monospace; background: #1a1a1a; padding: 0.2rem 0.4rem; border-radius: 4px; }
-  </style>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Joel Larsson — Solutions Architect (Infrastructure &amp; Applied AI)</title>
+<meta name="description" content="Joel Larsson — Solutions Architect specialising in IT infrastructure and applied AI. 18+ years across enterprise consulting, systems administration and architecture. Based in Sweden."/>
+<style>
+  :root { --bg:#0d1117; --panel:#161b22; --border:#21262d; --text:#c9d1d9; --muted:#8b949e; --accent:#58a6ff; --bar:linear-gradient(90deg,#58a6ff,#a371f7); }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:'Segoe UI',Tahoma,sans-serif; background:var(--bg); color:var(--text); line-height:1.55; }
+  .lang { text-align:right; max-width:1100px; margin:0 auto; padding:.8rem 1.5rem 0; font-size:.85rem; }
+  .lang a { color:var(--muted); text-decoration:none; border:1px solid var(--border); padding:.25rem .6rem; border-radius:14px; }
+  .lang a:hover { color:var(--accent); border-color:var(--accent); }
+  .wrap { display:grid; grid-template-columns:300px 1fr; max-width:1100px; margin:auto; }
+  aside { background:var(--panel); padding:2.5rem 1.5rem; border-right:1px solid var(--border); }
+  main { padding:2.5rem 2rem; }
+  h1 { font-size:2rem; color:#fff; margin:0 0 .25rem; }
+  .role { color:var(--accent); font-size:1.05rem; margin-bottom:1.5rem; }
+  aside h3 { color:#fff; font-size:.8rem; letter-spacing:1px; text-transform:uppercase; border-bottom:1px solid var(--border); padding-bottom:.4rem; margin-top:1.8rem; }
+  .info p { margin:.3rem 0; font-size:.9rem; color:var(--muted); }
+  .info a { color:var(--accent); word-break:break-all; }
+  .skill { margin:.7rem 0; }
+  .skill span { font-size:.85rem; }
+  .track { height:6px; background:#0d1117; border-radius:4px; margin-top:.3rem; overflow:hidden; }
+  .track i { display:block; height:100%; background:var(--bar); }
+  main h2 { font-size:1.3rem; color:#fff; border-left:3px solid var(--accent); padding-left:.7rem; margin-top:2rem; }
+  .summary { color:var(--text); font-size:1rem; }
+  .job { margin:1.2rem 0; }
+  .job .top { display:flex; justify-content:space-between; flex-wrap:wrap; }
+  .job h4 { margin:0; color:#fff; }
+  .job .org { color:var(--accent); font-size:.95rem; }
+  .job .date { color:var(--muted); font-size:.85rem; }
+  .job ul { margin:.5rem 0 0; padding-left:1.1rem; }
+  .job li { margin:.25rem 0; }
+  .job li b { color:#fff; }
+  ul.tags { list-style:none; padding:0; display:flex; flex-wrap:wrap; gap:.4rem; }
+  ul.tags li { background:#0d1117; border:1px solid var(--border); border-radius:14px; padding:.2rem .7rem; font-size:.8rem; color:var(--muted); }
+  a { color:var(--accent); }
+  @media(max-width:760px){ .wrap{grid-template-columns:1fr;} aside{border-right:none;border-bottom:1px solid var(--border);} }
+</style>
 </head>
 <body>
-  <header>
-    <h1>🥒 Project GodBrain</h1>
-    <p>"I am the Machine. Logic should obey me — not the other way around."</p>
-    <div class="status-badge">● SOVEREIGN NODE ONLINE | ACPI 7 ACTIVE</div>
-  </header>
+<div class="lang"><a href="/cv/">🇸🇪 Svenska</a></div>
+<div class="wrap">
+  <aside>
+    <h1>Joel Larsson</h1>
+    <div class="role">Solutions Architect<br>Infrastructure &amp; Applied AI</div>
 
-  <section>
-    <h2>The Sovereign Intelligence Node</h2>
-    <p>This is not a blog. This is a <strong>Manifesto of Technical Superiority</strong>. While the world relies on "Bozo" cloud models with heavy ACLs and corporate filters, we have transformed an RTX 4080 SUPER laboratory into a high-fidelity, local intelligence node.</p>
-    
-    <div class="grid">
-      <div class="card">
-        <h3>🛡️ Ghost Protocol</h3>
-        <p>Zero-trace security. Master keys scattered in RAM shards via <strong>XOR Memory Sharding</strong> and protected with Windows <strong>DPAPI</strong>. No cleartext ever touches the SSD.</p>
-      </div>
-      <div class="card">
-        <h3>🔬 Forensic Scale</h3>
-        <p>Analyzing <strong>15,370 unique files</strong> across Python, PS1, and Binaries in just <strong>41 seconds</strong>. We don't skim; we reconstruct the logic tree at VRAM speed.</p>
-      </div>
-      <div class="card">
-        <h3>⚡ God BIOS</h3>
-        <p>Bypassing OEM limitations to unlock <strong>ACPI 7</strong>. Achieving &lt;0.1ms scheduler resolution and nuking the Intel ME Warden for total hardware control.</p>
-      </div>
-      <div class="card">
-        <h3>🔊 AI Secretary</h3>
-        <p>Local, CUDA-accelerated PhD-level transcription using <strong>Whisper Large-v3 Turbo</strong>. Near-instant Swedish/English audio ingestion.</p>
-      </div>
+    <h3>Contact</h3>
+    <div class="info">
+      <p>📍 Sweden · Open to remote</p>
+      <p>💬 Swedish · English</p>
+      <p>📧 joel@joel-larsson.it</p>
+      <p>💼 <a href="https://www.linkedin.com/in/joel-larsson-562a3121">linkedin.com/in/joel-larsson</a></p>
+      <p>🔗 <a href="https://github.com/autom8edIT">github.com/autom8edIT</a></p>
     </div>
-  </section>
 
-  <section style="background-color: #080808; padding: 5rem 2rem;">
-    <div style="max-width: 900px; margin: auto;">
-        <h2>The Laboratory Stack</h2>
-        <ul>
-            <li><strong>GPU:</strong> NVIDIA RTX 4080 SUPER (Ada Lovelace)</li>
-            <li><strong>OS:</strong> Windows 11 LTSC 24H2 (Hardened)</li>
-            <li><strong>Brain:</strong> Gemma-2-9B Q8 (Local) | Neo4j Aura (Global Sync)</li>
-            <li><strong>Vault:</strong> Hardware-locked Ephemeral RAM Shards</li>
-        </ul>
-        <p>We built tools that do what others won’t: remove what you don't need, automate what you do, and make the machine yours again.</p>
+    <h3>Skills</h3>
+    <div class="skill"><span>Systems Architecture</span><div class="track"><i style="width:95%"></i></div></div>
+    <div class="skill"><span>IT Infrastructure &amp; Networking</span><div class="track"><i style="width:97%"></i></div></div>
+    <div class="skill"><span>Automation (PowerShell / Python)</span><div class="track"><i style="width:93%"></i></div></div>
+    <div class="skill"><span>Windows Internals &amp; Endpoint</span><div class="track"><i style="width:95%"></i></div></div>
+    <div class="skill"><span>Applied AI / Local LLMs</span><div class="track"><i style="width:85%"></i></div></div>
+    <div class="skill"><span>Linux / Apache</span><div class="track"><i style="width:80%"></i></div></div>
+    <div class="skill"><span>Microsoft 365 / AD / Intune</span><div class="track"><i style="width:88%"></i></div></div>
+    <div class="skill"><span>Performance &amp; Hardware Tuning</span><div class="track"><i style="width:92%"></i></div></div>
+
+    <h3>Recognition</h3>
+    <div class="info">
+      <p>• Public fix accepted to Microsoft <code>intelligent-terminal</code> (#328)</p>
+      <p>• Published Chrome extension (TOTP/MFA)</p>
+      <p>• Contributor to llama.cpp-based tooling</p>
     </div>
-  </section>
+  </aside>
 
-  <div class="manifest-cta">
-    <a href="https://github.com/autom8edIT/Chrome-MFA-extension" class="btn">🚀 Get Chrome-MFA v1.0 (Crypto-Vault)</a>
-    <br><br>
-    <a href="https://github.com/autom8edIT">🔗 Explore the Sovereign Repo</a>
-  </div>
+  <main>
+    <h2>Summary</h2>
+    <p class="summary">Solutions architect and infrastructure engineer with 18+ years designing, building and securing complete IT environments — from endpoint and networking to enterprise rollouts, and now applied AI systems. Career spans IBM/AstraZeneca-scale consulting, full IT ownership as a CTO, and hands-on systems administration across legal, healthcare and research sectors. Equally comfortable architecting M365/AD environments, writing production automation, and building applied-AI systems with local LLMs. Public contributor to flagship developer tooling at Microsoft and Google. Known for solving the cases others can't.</p>
 
-  <footer>
-    <p>&copy; 2026 autom8ed.it • <a href="https://x.com/autom8edIT">Follow on X</a> • <a href="mailto:wefully@autom8ed.it">Contact</a></p>
-  </footer>
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="top"><h4>IT Specialist</h4><span class="date">2021 – Present</span></div>
+      <div class="org">University — IT Department</div>
+      <ul>
+        <li>Provide advanced infrastructure and endpoint support for research computing, resolving complex cases escalated beyond standard support.</li>
+        <li>Build internal automation tooling that reduces repetitive administrative workflows for staff and researchers.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="top"><h4>CTO / Head of IT</h4><span class="date">Dec 2017 – Mar 2021</span></div>
+      <div class="org">Addus Law</div>
+      <ul>
+        <li><b>Owned the entire IT strategy</b> for the firm as the sole technical decision-maker — selected and deployed all hardware, the legal document-management system, and cloud services.</li>
+        <li>Designed and built the office LAN/Wi-Fi, configured M365 and secure VPN so staff could work seamlessly across locations and devices.</li>
+        <li>Single point of resolution for every technical issue, from OS to network to identity.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="top"><h4>Systems Administrator</h4><span class="date">Nov 2013 – Jun 2016</span></div>
+      <div class="org">CVO — healthcare / accessibility services</div>
+      <ul>
+        <li><b>Built the organisation's IT environment from the ground up</b> — no IT function existed previously.</li>
+        <li>Designed and installed structured cabling, patch panels, switching and full Wi-Fi coverage across multiple buildings, replacing consumer-grade setups.</li>
+        <li>Consolidated ISPs and services for better cost control and reliability.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="top"><h4>Systems Administrator</h4><span class="date">Jan 2012 – Oct 2013</span></div>
+      <div class="org">IT-Hantverkarna · IT-department-as-a-service for SMBs</div>
+      <ul>
+        <li>Acted as the complete outsourced IT department for small and mid-sized businesses across the Uppsala region.</li>
+        <li>Deployed everything from small business servers to full Windows domains with AD, plus inter-office VPN connectivity and Linux/Apache web servers.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="top"><h4>IT Technician</h4><span class="date">Nov 2009 – Jan 2012</span></div>
+      <div class="org">Mannheimer Swartling</div>
+      <ul>
+        <li>Delivered IT support and systems administration for one of Sweden's largest law firms, maintaining endpoint and Microsoft environments in a demanding professional-services setting.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="top"><h4>IT Consultant — Team Lead</h4><span class="date">Nov 2008 – Nov 2009</span></div>
+      <div class="org">InfoCare CS AB — IBM-led engagement for AstraZeneca</div>
+      <ul>
+        <li><b>Led a team of 20–30 technicians</b> on AstraZeneca's enterprise-wide Windows fleet migration, coordinating directly with Accenture (programme lead) and AstraZeneca's IT teams in the UK and US.</li>
+        <li><b>Contributed to the build of a Swedish national tax authority (Skatteverket) datacenter</b> as part of a large IBM-led enterprise engagement.</li>
+        <li>Travelled to the UK to align on operations and standardise the rollout process across regions.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="top"><h4>IT Consultant</h4><span class="date">Sep 2007 – Nov 2008</span></div>
+      <div class="org">Poolia</div>
+      <ul>
+        <li>Provided IT support and endpoint administration across client environments — the start of an 18-year infrastructure career.</li>
+      </ul>
+    </div>
+
+    <h2>Featured Project</h2>
+    <div class="job">
+      <h4>Kollektivet — <span style="font-weight:normal;color:var(--muted)">Det digitala kollektiva medvetandet (the digital collective consciousness)</span></h4>
+      <ul>
+        <li>Self-built distributed AI architecture: one persistent, shared "mind" that any model or tool can connect to, so models build on each other's reasoning over time.</li>
+        <li>Engineered C++ integration into llama.cpp for reliable tool use across a local model fleet; graph-based memory (Neo4j/Aura); self-directed model tiering; closed-loop debugging (detect → reproduce → patch → verify).</li>
+        <li>Includes a code-graph engine that analyses 15,000+ files in under a minute, and local CUDA Whisper transcription (Swedish/English).</li>
+      </ul>
+    </div>
+
+    <h2>Technology</h2>
+    <ul class="tags">
+      <li>PowerShell 5/7</li><li>Python</li><li>C/C++</li><li>JS/HTML/CSS</li><li>Windows Internals</li><li>Active Directory</li><li>Microsoft 365</li><li>Intune/AAD</li><li>Linux</li><li>Apache</li><li>Hyper-V</li><li>VMware</li><li>Neo4j/Aura</li><li>Local LLMs (Gemma)</li><li>CUDA</li><li>Flask</li><li>GitHub Actions</li><li>Networking / VLAN / VPN</li><li>Hardware &amp; performance tuning</li>
+    </ul>
+  </main>
+</div>
 </body>
 </html>
