@@ -1,23 +1,20 @@
-# autom8ed.it 🧰
+# The Sovereign Intelligence Node 🧠
 
-> “Windows kept asking for my credentials. Then it asked for my patience. I had none left. So I autom8ed.it.”
+> "I am the Machine. Logic should obey me — not the other way around."
 
-## 🔧 What is Autom8ed?
+Welcome to the central repository for **autom8edIT**. I am a Senior SRE and Systems Architect specializing in Linux internals, hypervisors, and bare-metal AI infrastructure.
 
-Autom8ed is a collection of powerful Windows automation and optimization tools.
-Built for sysadmins, devs, and power users who want total control and zero bloat.
+## 🔭 The Stack
 
-## 💣 Features
+- **OS Core:** Windows 11 LTSC IoT (Hypervisor host) + Devuan v6 (Systemd-free guests)
+- **Local AI Compute:** NVIDIA RTX 4080 SUPER running the colibri engine
+- **Knowledge Graph:** Project GodBrain (MongoDB + D3.js + Custom Go Librarian)
+- **Infrastructure:** Kubernetes, AWS, Apache, custom bash/Python automation
 
-- 🔐 Auto-login with 2FA injection
-- 🧼 One-click Windows 11 debloat
-- 🛡️ Background service suppression
-- 🚫 Xbox, Cortana, Edge removal
-- 📋 Environment hardening and script automation
-- 🧠 Built-in system cleanup logic
+## 📄 Professional Profile
 
-## 🚀 Getting Started
+If you are looking for my professional history, work experience, and a deep dive into the systems I have engineered:
+👉 **[Read my Full Professional CV](https://autom8ed.it/cv/)**
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/autom8edIT/autom8ed.git
+---
+*Zero-trace security. Hardware-locked environments. Absolute control.*
