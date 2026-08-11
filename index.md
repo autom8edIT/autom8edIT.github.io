@@ -1,0 +1,42 @@
+# Joel Larsson
+
+### Solutions Architect · Infrastructure & Applied AI
+
+I design and build complete systems — from endpoint and networking to enterprise infrastructure, and now autonomous AI architectures. 18+ years of experience spanning IBM/AstraZeneca-scale consulting, full IT ownership as a CTO, and hands-on systems administration across the legal, healthcare and research sectors.
+
+📍 Sweden · 🌐 Open to remote · 💬 Swedish / English
+
+---
+
+### 🛠️ What I work with
+
+- **Architecture & Infrastructure** — end-to-end systems · Networking · Active Directory / M365 · Linux / Apache / macOS / performance & hardware tuning
+- **Applied AI** — local LLMs · multi-model orchestration · persistent-memory architectures like making a backend system based on mongoDB with a librarian that keep the database clean and only saves the important info.
+- **Engineering** — PowerShell · Python · C/C++ · Rust · automation · Windows internals
+
+---
+
+### 🔭 Featured project
+
+**[OmniContext](https://github.com/autom8edIT/OmniContext)** — *"Persistent SRE Data Lake—a massive, specialized MongoDB graph that ingests scattered ops data and strips out the noise so any LLM can query a clean, gigabyte-scale reality of the system without hallucinating"*
+
+A self-built distributed AI architecture: one persistent, shared "mind" that any model or tool can plug into — from a CLI agent to a local `llama-server` model — so models build on each other's reasoning and the system compounds over time. If you already use any graph-based memory (Neo4j/Aura), or self-directed model tiering like Constellation it's basically just plug n play, aka. closed-loop debugging.
+
+I started building this because in general the standard RAG sucks for SRE. When you ask an LLM to analyze Windows services, you can't just feed it an unsorted 27,000-character text dump.
+OmniContext ingests any format, structures it into nodes and edges in MongoDB, and gives the LLM exactly what it needs to execute safe operational surgery.
+
+---
+
+### 🏆 Recognition
+
+- Public fix accepted to Microsoft's `intelligent-terminal` (#328)
+- Published Chrome extension (TOTP / MFA)
+- Contributor to llama.cpp-based tooling
+
+---
+
+### 📫 Get in touch
+
+- 📄 **CV / Resume:** [autom8edIT.github.io](https://autom8edIT.github.io)
+- 💼 **LinkedIn:** [linkedin.com/in/joel-larsson](https://www.linkedin.com/in/joel-larsson-562a3121)
+- 📧 **Email:** joel.larsson@autom8ed.me
