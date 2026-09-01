@@ -19,6 +19,9 @@ healthcare, and research environments.
 [LinkedIn](https://www.linkedin.com/in/joel-larsson-562a3121) |
 [Email](mailto:joel.larsson@autom8ed.me)
 
+<button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Flashbang mode</button>
+<script src="/assets/js/theme.js" defer></script>
+
 ---
 
 ## What I deliver
@@ -33,7 +36,7 @@ failed layer and prove that the repair worked.
 ### Infrastructure automation
 
 I turn repeated operational work into bounded, observable automation using
-PowerShell, Python, C/C++, Go, and Rust. I favor explicit inputs, dry-run or
+PowerShell, Bash, Python, C/C++, Go, and Rust. I favor explicit inputs, dry-run or
 preview stages, audit history, rollback, and post-change verification.
 
 ### Enterprise systems
@@ -49,6 +52,19 @@ I build local-first agent systems that retrieve operational knowledge, inspect a
 host, propose bounded actions, and verify outcomes. The language model is a
 replaceable reasoning component. Authorization, policy, execution, and audit stay
 in deterministic code.
+
+I have used ChatGPT since its public launch and continuously evaluate newly
+released open-weight models from Hugging Face alongside GitHub Copilot Max and
+SuperGrok. I compare them on real SRE investigations, repository-scale coding,
+tool use, context retention, and verifier-backed implementation rather than on
+chat impressions alone.
+
+### CLI-first engineering
+
+My primary interfaces are PowerShell and Bash, supported by Git, APIs, compilers,
+tests, and repeatable scripts. I use graphical interfaces when they expose a
+signal that is inherently visual; routine administration and engineering should
+remain observable, reproducible, and automatable.
 
 ---
 
@@ -90,6 +106,11 @@ host evidence
 The project is deliberately conservative around privileged execution: automated
 diagnosis is broader than automated repair, and high-impact changes remain
 operator-gated.
+
+GodBrain also serves as the integration layer for this model evaluation. Its own
+kernel, local interface, tool protocol, knowledge boundary, and verification loop
+reduce dependence on any particular paid CLI, GUI, model vendor, or inference
+engine.
 
 [Explore the active implementation](https://github.com/usrname1git/GodBrain)
 

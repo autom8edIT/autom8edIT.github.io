@@ -1,0 +1,124 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background: #080d14;
+  color: #d9e2ec;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: #f0f4f8;
+}
+
+a {
+  color: #63b3ed;
+}
+
+blockquote {
+  border-left-color: #486581;
+  color: #9fb3c8;
+}
+
+code,
+pre {
+  background: #111c27;
+  border-color: #334e68;
+  color: #e6edf3;
+}
+
+table th,
+table td {
+  border-color: #334e68;
+}
+
+header,
+footer {
+  color: #9fb3c8;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  padding: .45rem .75rem;
+  border: 1px solid #486581;
+  border-radius: .4rem;
+  background: #111c27;
+  color: #d9e2ec;
+  cursor: pointer;
+  font: inherit;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  border-color: #63b3ed;
+  outline: 2px solid transparent;
+}
+
+body.flashbang {
+  color-scheme: light;
+  background: #fff;
+  color: #24292f;
+}
+
+body.flashbang h1,
+body.flashbang h2,
+body.flashbang h3,
+body.flashbang h4,
+body.flashbang h5,
+body.flashbang h6,
+body.flashbang strong {
+  color: #102a43;
+}
+
+body.flashbang a {
+  color: #0969da;
+}
+
+body.flashbang blockquote {
+  border-left-color: #d0d7de;
+  color: #57606a;
+}
+
+body.flashbang code,
+body.flashbang pre {
+  background: #f6f8fa;
+  border-color: #d0d7de;
+  color: #24292f;
+}
+
+body.flashbang table th,
+body.flashbang table td {
+  border-color: #d0d7de;
+}
+
+body.flashbang header,
+body.flashbang footer {
+  color: #57606a;
+}
+
+body.flashbang .theme-toggle {
+  border-color: #d0d7de;
+  background: #f6f8fa;
+  color: #24292f;
+}
+
+@media (max-width: 720px) {
+  .theme-toggle {
+    position: static;
+    margin-bottom: 1rem;
+  }
+}
