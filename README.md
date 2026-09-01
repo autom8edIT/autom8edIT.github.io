@@ -10,9 +10,10 @@ The site presents:
   system, and application boundaries;
 - Windows, Linux, macOS, Active Directory, networking, virtualization, and
   endpoint engineering;
-- infrastructure automation using PowerShell, Python, C/C++, Go, and Rust;
-- GodBrain, a local-first, verifier-driven SRE automation system.
+- infrastructure automation using PowerShell, Bash, Python, C/C++, Go, and Rust;
+- SREBrain, a platform- and model-agnostic verifier-first SRE project;
+- GodBrain, the Windows-first research lab behind the deeper automation work.
 
 [View the portfolio](https://autom8ed.it) |
 [Read the resume](https://autom8ed.it/resume/) |
-[Explore GodBrain](https://github.com/usrname1git/GodBrain)
+[Explore SREBrain](https://github.com/autom8edIT/SREBrain)

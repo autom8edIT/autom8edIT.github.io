@@ -186,17 +186,25 @@
     <ul>
       <li>Used ChatGPT since its public launch and continuously evaluate newly released open-weight models from Hugging Face alongside GitHub Copilot Max and SuperGrok.</li>
       <li>Compare models on repository-scale coding, infrastructure investigations, tool use, context retention, and verifier-backed implementation.</li>
-      <li>Apply those findings in GodBrain, an operator-controlled local system designed to remain independent of any single paid CLI, GUI, model vendor, or inference engine.</li>
+      <li>Apply those findings in GodBrain and SREBrain: operator-controlled systems designed to remain independent of any single paid CLI, GUI, model vendor, or inference engine.</li>
     </ul>
 
     <h2>Selected engineering work</h2>
     <div class="job">
-      <h3><a href="https://github.com/usrname1git/GodBrain">GodBrain - Windows-first SRE agent</a></h3>
+      <h3><a href="https://github.com/autom8edIT/SREBrain">SREBrain - cross-platform SRE automation</a></h3>
+      <ul>
+        <li>Created a clean-history Go implementation of a platform- and model-agnostic SRE backend contract.</li>
+        <li>Shipped fixed read-only diagnostic catalogs for Windows and Linux with timestamped SHA-256 evidence receipts.</li>
+        <li>Kept mutation fail-closed until every action has an allowlist entry, authenticated policy decision, verifier, rollback path, and failure tests.</li>
+        <li>Established Windows and Linux CI from the first commit.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3><a href="https://github.com/usrname1git/GodBrain">GodBrain - Windows research lab</a></h3>
       <ul>
         <li>Designed a native C++ control kernel around a replaceable local language-model endpoint.</li>
         <li>Separated model reasoning from authorization, policy, execution, audit, and verification.</li>
         <li>Built a Go-based immutable ingestion and reviewed retrieval boundary for operational knowledge.</li>
-        <li>Implemented bounded host diagnostics, authenticated remediation, exact-child process control, and rollback-aware edits.</li>
       </ul>
     </div>
     <div class="job">

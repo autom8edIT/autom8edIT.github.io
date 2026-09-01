@@ -68,59 +68,69 @@ remain observable, reproducible, and automatable.
 
 ---
 
-## Featured project: GodBrain
+## Featured project: SREBrain
 
-[GodBrain](https://github.com/usrname1git/GodBrain) is a Windows-first SRE agent
-and automation system with a native C++ control kernel, a Go knowledge boundary,
-and a local OpenAI-compatible model endpoint.
+[SREBrain](https://github.com/autom8edIT/SREBrain) is a platform- and
+model-agnostic project built to create the ultimate SRE agent. In this project,
+"ultimate" is not an unqualified superlative; it is a public set of acceptance
+criteria covering diagnosis, authorization, verification, rollback, evidence,
+and platform support.
 
 ### Engineering problem
 
 Traditional support tools inspect isolated components. Generic AI assistants can
-produce plausible advice but usually lack trustworthy host evidence, durable
-operational memory, controlled execution, and a verifier.
+produce plausible advice but usually lack trustworthy host evidence, controlled
+execution, and a verifier. SREBrain separates the portable operational contract
+from any one model, interface, or operating system.
 
 ### Design
 
 ```text
-host evidence
-    -> bounded diagnosis
-    -> retrieved and reviewed operational knowledge
-    -> proposed action
-    -> authorization and policy gate
-    -> exact-child execution
-    -> post-change verification
-    -> auditable result
+detect
+    -> diagnose
+    -> plan
+    -> authorize
+    -> apply
+    -> verify
+    -> record
 ```
 
 ### Current capabilities
 
-- Loopback-only C++ HTTP kernel and operator interface.
-- Windows host inventory, service and process observations, network diagnostics,
-  and bounded local tooling.
-- Bearer-authenticated privileged commands with explicit policy decisions.
-- Immutable source ingestion and candidate-to-verified knowledge promotion.
-- Fail-closed retrieval and local-edit verification with rollback.
-- Append-only audit and correlated event history.
+- Shared Go interfaces for diagnostics, plans, application, rollback, and
+  evidence.
+- Fixed read-only Windows and Linux diagnostic catalogs.
+- No shell construction from operator or model text.
+- Timestamped SHA-256 receipts for exact diagnostic output.
+- Mutation methods that fail closed until the complete verifier contract exists.
+- Windows and Linux CI from the first commit.
 
-The project is deliberately conservative around privileged execution: automated
-diagnosis is broader than automated repair, and high-impact changes remain
-operator-gated.
+The first release is intentionally diagnose-only. A mutating action will ship
+only when it has a checked-in allowlist entry, typed plan, authenticated policy
+decision, postcondition verifier, rollback path, and failure fixtures.
 
-GodBrain also serves as the integration layer for this model evaluation. Its own
-kernel, local interface, tool protocol, knowledge boundary, and verification loop
-reduce dependence on any particular paid CLI, GUI, model vendor, or inference
-engine.
+[Explore SREBrain](https://github.com/autom8edIT/SREBrain)
 
-[Explore the active implementation](https://github.com/usrname1git/GodBrain)
+---
+
+## Research lab: GodBrain
+
+[GodBrain](https://github.com/usrname1git/GodBrain) is the Windows-first research
+lab where the deeper closed-loop runtime, native C++ kernel, local model
+integration, operational knowledge boundary, and host-specific experiments are
+developed.
+
+SREBrain extracts the portable professional contract. GodBrain remains free to
+push Windows B-line automation and local-agent research without making every
+experiment part of the recruiter-facing product.
 
 ---
 
 ## Architecture case study: OmniContext
 
 [OmniContext](https://github.com/autom8edIT/OmniContext) preserves the earlier
-prototype and explains the engineering lessons that led to GodBrain's current
-design.
+prototype and explains the engineering lessons that led to GodBrain and
+SREBrain.
 
 The case study covers:
 
