@@ -1,1 +1,4 @@
-theme: jekyll-theme-hacker
+theme: jekyll-theme-minimal
+title: Joel Larsson
+description: Senior SRE and Infrastructure Automation Engineer
+show_downloads: false

@@ -1,20 +1,18 @@
-# The Sovereign Intelligence Node 🧠
+# Autom8edIT portfolio
 
-> "I am the Machine. Logic should obey me — not the other way around."
+Source for [autom8ed.it](https://autom8ed.it), the professional portfolio of
+Joel Larsson, Senior SRE and Infrastructure Automation Engineer.
 
-Welcome to the central repository for **autom8edIT**. I am a Senior SRE and Systems Architect specializing in Linux internals, hypervisors, and bare-metal AI infrastructure.
+The site presents:
 
-## 🔭 The Stack
+- nearly 20 years of enterprise and small-business infrastructure experience;
+- cross-layer root-cause analysis across endpoint, identity, network, operating
+  system, and application boundaries;
+- Windows, Linux, macOS, Active Directory, networking, virtualization, and
+  endpoint engineering;
+- infrastructure automation using PowerShell, Python, C/C++, Go, and Rust;
+- GodBrain, a local-first, verifier-driven SRE automation system.
 
-- **OS Core:** Windows 11 LTSC IoT (Hypervisor host) + Devuan v6 (Systemd-free guests)
-- **Local AI Compute:** NVIDIA RTX 4080 SUPER running the colibri engine
-- **Knowledge Graph:** Project GodBrain (MongoDB + D3.js + Custom Go Librarian)
-- **Infrastructure:** Kubernetes, AWS, Apache, custom bash/Python automation
-
-## 📄 Professional Profile
-
-If you are looking for my professional history, work experience, and a deep dive into the systems I have engineered:
-👉 **[Read my Full Professional CV](https://autom8ed.it/cv/)**
-
----
-*Zero-trace security. Hardware-locked environments. Absolute control.*
+[View the portfolio](https://autom8ed.it) |
+[Read the resume](https://autom8ed.it/resume/) |
+[Explore GodBrain](https://github.com/usrname1git/GodBrain)
