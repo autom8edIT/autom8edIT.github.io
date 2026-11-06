@@ -1,0 +1,89 @@
+{
+  "projects": [
+    {
+      "cover": "CMDSTATUS",
+      "description": "Workstation and AI control in one native Windows interface: model settings, core services, remote access, media and display controls. Screenshots are sanitized UI captures, not live readiness guarantees.",
+      "id": "command-center",
+      "images": [
+        {
+          "capture_kind": "live-sanitized-ui",
+          "description": "Workstation and AI control; private connection details omitted.",
+          "height": 779,
+          "id": "CMDSTATUS",
+          "path": "assets/command-center/CMDSTATUS.webp",
+          "sha256": "39b2c17816063b52b6aef94217e889735bfdf9c697be5d82ef7fe22dfc9aca88",
+          "width": 676
+        },
+        {
+          "capture_kind": "live-sanitized-ui",
+          "description": "Model configuration and request-scoped reasoning controls; no generation started.",
+          "height": 779,
+          "id": "CMDMODELS",
+          "path": "assets/command-center/CMDMODELS.webp",
+          "sha256": "6844779dcca2e5d347884a3f6e2205750c16212de179e414a665988e2009001d",
+          "width": 676
+        }
+      ],
+      "source_url": "https://github.com/usrname1git/GodBrain",
+      "title": "Command Center",
+      "url": "https://github.com/usrname1git/GodBrain"
+    },
+    {
+      "cover": "RECLAIM11_DOOR",
+      "description": "Windows maintenance with beginner and power-user entry points, preflight gates and explicit recovery paths. These source-rendered previews omit host inventory and do not demonstrate a repair run.",
+      "id": "reclaim11",
+      "images": [
+        {
+          "capture_kind": "sanitized-source-ui",
+          "description": "Entry-point chooser, rendered without collecting host inventory.",
+          "height": 760,
+          "id": "RECLAIM11_DOOR",
+          "path": "assets/reclaim11/RECLAIM11_DOOR.webp",
+          "sha256": "97faf98a43c36df61feb138bfd6f3ded9d95b0a7ff47d0f29678e2b3e423a034",
+          "width": 1000
+        },
+        {
+          "capture_kind": "sanitized-source-ui",
+          "description": "Power-user interface; private inventory omitted and repair controls not connected.",
+          "height": 760,
+          "id": "RECLAIM11_PRO",
+          "path": "assets/reclaim11/RECLAIM11_PRO.webp",
+          "sha256": "899cf94a677d990fbec7ee5c9042b0cd7b00fea98b11c05a39f65fd8c757cd67",
+          "width": 1000
+        },
+        {
+          "capture_kind": "sanitized-source-ui",
+          "description": "Beginner interface; no host inventory or repair actions performed.",
+          "height": 760,
+          "id": "RECLAIM11_BEGINNER",
+          "path": "assets/reclaim11/RECLAIM11_BEGINNER.webp",
+          "sha256": "0a271a7a9f8f9361dd2703ea05f50e78d7608e7357f4ae4a5c8181eceace0c02",
+          "width": 1000
+        }
+      ],
+      "source_url": "https://github.com/usrname1git/GodBrain/tree/main/godbrain_core/reclaim11",
+      "title": "Reclaim11",
+      "url": "https://github.com/usrname1git/GodBrain/tree/main/godbrain_core/reclaim11"
+    },
+    {
+      "cover": "PHONEDASHBOARD",
+      "description": "A private, read-only mobile overview of the workstation. Refreshing never starts a model or repairs a service; operational controls remain in explicit remote tools.",
+      "id": "remote-dashboard",
+      "images": [
+        {
+          "capture_kind": "live-sanitized-source-ui",
+          "description": "Mobile view of passive status; private diagnostic and connection details omitted.",
+          "height": 1316,
+          "id": "PHONEDASHBOARD",
+          "path": "assets/remote-dashboard/PHONEDASHBOARD.webp",
+          "sha256": "e6e7c169e634822fed5cb3dc23a2a97cf1bbc325e895b211a9d72e46e019e23d",
+          "width": 390
+        }
+      ],
+      "source_url": "https://github.com/usrname1git/GodBrain/blob/main/godbrain_core/frontend/phone.html",
+      "title": "Remote Dashboard",
+      "url": "https://github.com/usrname1git/GodBrain"
+    }
+  ],
+  "schema_version": 1
+}

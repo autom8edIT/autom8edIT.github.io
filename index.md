@@ -183,3 +183,6 @@ and reliability engineering roles that support remote work from Sweden.
 - [GitHub](https://github.com/autom8edIT)
 - [LinkedIn](https://www.linkedin.com/in/joel-larsson-562a3121)
 - [joel.larsson@autom8ed.me](mailto:joel.larsson@autom8ed.me)
+
+<!-- godbrain-project-showcase -->
+[Explore the project showcase](./projects/) - Command Center, Reclaim11 and Remote Dashboard.
