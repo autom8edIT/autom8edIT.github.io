@@ -2,7 +2,7 @@
   "projects": [
     {
       "cover": "CMDSTATUS",
-      "description": "Workstation and AI control in one native Windows interface: model settings, core services, remote access, media and display controls. Screenshots are sanitized UI captures, not live readiness guarantees.",
+      "description": "Workstation and AI control in one native Windows interface: model settings, core services, remote access, AirPlay receiver lifecycle and Dell hardware display controls. All Command Center pages are collected here. Screenshots are sanitized UI captures, not live readiness or playback guarantees.",
       "id": "command-center",
       "images": [
         {
@@ -21,6 +21,24 @@
           "id": "CMDMODELS",
           "path": "assets/command-center/CMDMODELS.webp",
           "sha256": "ef7946d5295b98129e564cf1963eb900d72f37ba44ae7a892223374feec2a666",
+          "width": 676
+        },
+        {
+          "capture_kind": "sanitized-source-ui",
+          "description": "AirPlay on Windows: implemented asynchronous Start/Stop/Open and exact-process ownership controls. ShairportQt supplies the receiver and AirPlay transport. Private sender details omitted; no receiver action or audible-delivery test performed.",
+          "height": 320,
+          "id": "AIRPLAYCONTROLS",
+          "path": "assets/command-center/AIRPLAYCONTROLS.webp",
+          "sha256": "95a97a6f28a824b9dec41017ddc4f27937ef8aa37c9802e5af8a4302d6765934",
+          "width": 660
+        },
+        {
+          "capture_kind": "sanitized-source-ui",
+          "description": "Dell S2522HG brightness, contrast, color-preset and Dark Stabilizer controls. Production native Monitor page rendered without DDC queries or hardware changes; initial inputs are UI defaults, not measurements.",
+          "height": 779,
+          "id": "MONITORCONTROLS",
+          "path": "assets/command-center/MONITORCONTROLS.webp",
+          "sha256": "7c401d6e13c8cf506d5067d14eeb979070843d856a6d3d507a1b0b0e69a9d1fa",
           "width": 676
         }
       ],
@@ -100,44 +118,6 @@
       ],
       "source_url": "https://github.com/usrname1git/GodBrain",
       "title": "GodBrain Workspace",
-      "url": "https://github.com/usrname1git/GodBrain"
-    },
-    {
-      "cover": "AIRPLAYCONTROLS",
-      "description": "GodBrain adds asynchronous Start/Stop/Open, receiver-state inspection and exact-process ownership to the existing ShairportQt receiver. ShairportQt supplies the AirPlay transport; this project does not claim authorship of that protocol or receiver.",
-      "id": "airplay-windows",
-      "images": [
-        {
-          "capture_kind": "sanitized-source-ui",
-          "description": "Focused capture of the implemented Command Center receiver controls. Private receiver/sender details omitted; no receiver action or audible-delivery test performed.",
-          "height": 320,
-          "id": "AIRPLAYCONTROLS",
-          "path": "assets/airplay-windows/AIRPLAYCONTROLS.webp",
-          "sha256": "95a97a6f28a824b9dec41017ddc4f27937ef8aa37c9802e5af8a4302d6765934",
-          "width": 660
-        }
-      ],
-      "source_url": "https://github.com/usrname1git/GodBrain",
-      "title": "AirPlay on Windows",
-      "url": "https://github.com/usrname1git/GodBrain"
-    },
-    {
-      "cover": "MONITORCONTROLS",
-      "description": "Dell S2522HG hardware brightness, contrast and color-preset controls with apply/readback checks, plus Dark Stabilizer cycling. The UI preview performs no hardware query or write and does not manufacture a current Dark Stabilizer level.",
-      "id": "dell-monitor",
-      "images": [
-        {
-          "capture_kind": "sanitized-source-ui",
-          "description": "The production native Monitor page, rendered without DDC queries or hardware changes. Initial input values are UI defaults, not measurements.",
-          "height": 779,
-          "id": "MONITORCONTROLS",
-          "path": "assets/dell-monitor/MONITORCONTROLS.webp",
-          "sha256": "7c401d6e13c8cf506d5067d14eeb979070843d856a6d3d507a1b0b0e69a9d1fa",
-          "width": 676
-        }
-      ],
-      "source_url": "https://github.com/usrname1git/GodBrain",
-      "title": "Dell Monitor Controls",
       "url": "https://github.com/usrname1git/GodBrain"
     },
     {
