@@ -11,7 +11,7 @@
           "height": 779,
           "id": "CMDSTATUS",
           "path": "assets/command-center/CMDSTATUS.webp",
-          "sha256": "39b2c17816063b52b6aef94217e889735bfdf9c697be5d82ef7fe22dfc9aca88",
+          "sha256": "b7d535ef3f94080f38783990f53fd22835191efd53cbc220760da5abe6ce737c",
           "width": 676
         },
         {
@@ -20,7 +20,7 @@
           "height": 779,
           "id": "CMDMODELS",
           "path": "assets/command-center/CMDMODELS.webp",
-          "sha256": "6844779dcca2e5d347884a3f6e2205750c16212de179e414a665988e2009001d",
+          "sha256": "ef7946d5295b98129e564cf1963eb900d72f37ba44ae7a892223374feec2a666",
           "width": 676
         }
       ],
@@ -66,6 +66,100 @@
       "url": "https://github.com/usrname1git/GodBrain/tree/main/godbrain_core/reclaim11"
     },
     {
+      "cover": "WORKSPACEMAP",
+      "description": "A practical knowledge workspace: seven shelves, a readable mind map/list, source-bound records and a local assistant. Correct-answer assessments stay separate from SRE admission. Public captures redact actual record content, identifiers and host values.",
+      "id": "workspace",
+      "images": [
+        {
+          "capture_kind": "live-sanitized-source-ui",
+          "description": "Live canonical graph rendered by the production Workspace UI; record titles, content and identifiers redacted. Statuses are a capture-time snapshot, not current readiness.",
+          "height": 1118,
+          "id": "WORKSPACEMAP",
+          "path": "assets/workspace/WORKSPACEMAP.webp",
+          "sha256": "0530b79f4c697e010fa5f738fb5fcba0afc3c25d1ea743070e2bdc85d1e305b5",
+          "width": 1440
+        },
+        {
+          "capture_kind": "live-sanitized-source-ui",
+          "description": "Existing bounded Environment context; private host values and work continuity omitted. Not a full software inventory or readiness certificate.",
+          "height": 1136,
+          "id": "WORKSPACEENV",
+          "path": "assets/workspace/WORKSPACEENV.webp",
+          "sha256": "69ab708ce43a276deb7c8c05dbd54ec98f9aaa186641ff12ba0b157ef4a31431",
+          "width": 1440
+        },
+        {
+          "capture_kind": "live-sanitized-source-ui",
+          "description": "The separate Model Evaluations shelf; actual working record content and identifiers redacted. These notes are untrusted, not promoted domain knowledge.",
+          "height": 1149,
+          "id": "WORKSPACEEVAL",
+          "path": "assets/workspace/WORKSPACEEVAL.webp",
+          "sha256": "0c19aa8cfae12b453102fa514f1b6c3f9f36d5af2d395e681b3018c9e989718d",
+          "width": 1440
+        }
+      ],
+      "source_url": "https://github.com/usrname1git/GodBrain",
+      "title": "GodBrain Workspace",
+      "url": "https://github.com/usrname1git/GodBrain"
+    },
+    {
+      "cover": "AIRPLAYCONTROLS",
+      "description": "GodBrain adds asynchronous Start/Stop/Open, receiver-state inspection and exact-process ownership to the existing ShairportQt receiver. ShairportQt supplies the AirPlay transport; this project does not claim authorship of that protocol or receiver.",
+      "id": "airplay-windows",
+      "images": [
+        {
+          "capture_kind": "sanitized-source-ui",
+          "description": "Focused capture of the implemented Command Center receiver controls. Private receiver/sender details omitted; no receiver action or audible-delivery test performed.",
+          "height": 320,
+          "id": "AIRPLAYCONTROLS",
+          "path": "assets/airplay-windows/AIRPLAYCONTROLS.webp",
+          "sha256": "95a97a6f28a824b9dec41017ddc4f27937ef8aa37c9802e5af8a4302d6765934",
+          "width": 660
+        }
+      ],
+      "source_url": "https://github.com/usrname1git/GodBrain",
+      "title": "AirPlay on Windows",
+      "url": "https://github.com/usrname1git/GodBrain"
+    },
+    {
+      "cover": "MONITORCONTROLS",
+      "description": "Dell S2522HG hardware brightness, contrast and color-preset controls with apply/readback checks, plus Dark Stabilizer cycling. The UI preview performs no hardware query or write and does not manufacture a current Dark Stabilizer level.",
+      "id": "dell-monitor",
+      "images": [
+        {
+          "capture_kind": "sanitized-source-ui",
+          "description": "The production native Monitor page, rendered without DDC queries or hardware changes. Initial input values are UI defaults, not measurements.",
+          "height": 779,
+          "id": "MONITORCONTROLS",
+          "path": "assets/dell-monitor/MONITORCONTROLS.webp",
+          "sha256": "7c401d6e13c8cf506d5067d14eeb979070843d856a6d3d507a1b0b0e69a9d1fa",
+          "width": 676
+        }
+      ],
+      "source_url": "https://github.com/usrname1git/GodBrain",
+      "title": "Dell Monitor Controls",
+      "url": "https://github.com/usrname1git/GodBrain"
+    },
+    {
+      "cover": "IOSWORKFLOW",
+      "description": "Start a stopped RustDesk backend from an authenticated SSH Shortcut, verify it, then open the mobile client. A separate private read-only dashboard shows the stack. These are documented existing Windows bridges, not a new phone runtime or public control endpoint.",
+      "id": "ios-shortcuts",
+      "images": [
+        {
+          "capture_kind": "source-workflow-illustration",
+          "description": "Source-bound workflow illustration from phone-control.md and Start-RustDesk.ps1, not a captured iPhone screen. No keys, usernames, private addresses or live connection claims.",
+          "height": 1000,
+          "id": "IOSWORKFLOW",
+          "path": "assets/ios-shortcuts/IOSWORKFLOW.webp",
+          "sha256": "50adfb13aed5d782b5e286a1ce4d540ba9c19a6cae663660e88c48bd69f7b559",
+          "width": 1440
+        }
+      ],
+      "source_url": "https://github.com/usrname1git/GodBrain",
+      "title": "iOS Shortcut Workflows",
+      "url": "https://github.com/usrname1git/GodBrain"
+    },
+    {
       "cover": "PHONEDASHBOARD",
       "description": "A private, read-only mobile overview of the workstation. Refreshing never starts a model or repairs a service; operational controls remain in explicit remote tools.",
       "id": "remote-dashboard",
@@ -73,10 +167,10 @@
         {
           "capture_kind": "live-sanitized-source-ui",
           "description": "Mobile view of passive status; private diagnostic and connection details omitted.",
-          "height": 1316,
+          "height": 1378,
           "id": "PHONEDASHBOARD",
           "path": "assets/remote-dashboard/PHONEDASHBOARD.webp",
-          "sha256": "e6e7c169e634822fed5cb3dc23a2a97cf1bbc325e895b211a9d72e46e019e23d",
+          "sha256": "48a8573556b09cb7760931eba57d56a580dea5d8db918b1beba8b1fe1a285f0d",
           "width": 390
         }
       ],
