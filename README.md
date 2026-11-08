@@ -32,6 +32,10 @@ node --test tests/theme.test.cjs
 
 These cover theme selection, blocked browser storage, cross-page persistence,
 palette parity, text contrast and the code-block/print styling contracts.
+They also check the sidebar showcase entry and curated project order. The
+gallery leads with Workspace, Command Center, iOS Shortcuts and Remote Dashboard;
+Reclaim11 stays last, including when additional projects are introduced.
+The matching gallery template in GodBrain preserves this order on refresh.
 For visual changes, also check `/`, `/resume/` and the `/cv/` redirect in a
 browser, including narrow screens, keyboard focus, both themes and print.
 The site remains static GitHub Pages/Jekyll; Node.js is only used to run checks.

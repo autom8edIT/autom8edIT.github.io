@@ -137,3 +137,46 @@ test("print overrides both stored modes and keeps resume controls available on m
   assert.doesNotMatch(mobile, /display:\s*none/);
   assert.match(resume, /src="\/assets\/js\/theme\.js"/);
 });
+
+test("the static sidebar links directly to the project showcase below GitHub", () => {
+  const layout = fs.readFileSync(path.join(root, "_layouts", "default.html"), "utf8");
+  const header = layout.match(/<header>([\s\S]*?)<\/header>/)[1];
+  assert.match(header, /href="{{ '\/projects\/' \| relative_url }}">Explore the project showcase<\/a>/);
+  assert.ok(header.indexOf("View My GitHub Profile") < header.indexOf("Explore the project showcase"));
+  assert.match(layout, /{{ content }}/);
+});
+
+test("gallery curation survives catalog order, filtering and new projects", async () => {
+  class Element {
+    constructor() { this.children = []; this.listeners = {}; this.value = ""; }
+    append(...children) { this.children.push(...children); }
+    replaceChildren(...children) { this.children = children; }
+    setAttribute() {}
+    addEventListener(name, callback) { this.listeners[name] = callback; }
+  }
+  const elements = Object.fromEntries(
+    ["projects", "status", "viewer", "search", "close"].map(id => [id, new Element()])
+  );
+  const ids = ["command-center", "reclaim11", "future-tool", "workspace", "ios-shortcuts", "remote-dashboard"];
+  const catalog = {
+    schema_version: 1,
+    projects: ids.map(id => ({
+      id, title: id, description: id, url: "https://example.com", source_url: "https://example.com",
+      images: [{ id: "COVER", sha256: "a".repeat(64), path: `assets/${id}/COVER.webp`, description: id }],
+    })),
+  };
+  vm.runInNewContext(fs.readFileSync(path.join(root, "projects", "gallery.js"), "utf8"), {
+    document: { getElementById: id => elements[id], createElement: () => new Element() },
+    URL,
+    fetch: async () => ({ ok: true, json: async () => catalog }),
+  });
+  await new Promise(resolve => setImmediate(resolve));
+  const titles = () => elements.projects.children.map(article => article.children[0].textContent);
+  assert.deepEqual(titles(), ["workspace", "command-center", "ios-shortcuts", "remote-dashboard", "future-tool", "reclaim11"]);
+  elements.search.value = "remote";
+  elements.search.listeners.input();
+  assert.deepEqual(titles(), ["remote-dashboard"]);
+  elements.search.value = "";
+  elements.search.listeners.input();
+  assert.equal(titles().at(-1), "reclaim11");
+});

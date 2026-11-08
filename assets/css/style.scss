@@ -137,6 +137,11 @@ header h1 a {
   text-decoration: none;
 }
 
+.showcase-link {
+  display: inline-block;
+  font-weight: 600;
+}
+
 hr {
   margin: 2.5rem 0;
   background: var(--line);
