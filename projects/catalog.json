@@ -140,6 +140,25 @@
       "url": "https://github.com/usrname1git/GodBrain"
     },
     {
+      "cover": "CLIPSHAREFLOW",
+      "description": "Send a completed local image, video or audio file as a browser-friendly link. Native Windows intake, CPU media preparation, hash-bound publication and live share revocation turn a simple action into a controlled workflow. Illustration of the implementation in ClipShare PR1, not a live sharing or external-reachability demo.",
+      "id": "clipshare",
+      "images": [
+        {
+          "capture_kind": "source-workflow-illustration",
+          "description": "Source workflow: completed file, atomic Inbox copy, verified CPU derivative and read-only recipient link. Not a screenshot of the native sender or a public-network test; no private media, credentials or bearer URLs.",
+          "height": 1043,
+          "id": "CLIPSHAREFLOW",
+          "path": "assets/clipshare/CLIPSHAREFLOW.webp",
+          "sha256": "cf22bf7c6fe22e5a03b007b2fde71cd8727d1aee5d7d0931e7e68acf6135e138",
+          "width": 1440
+        }
+      ],
+      "source_url": "https://github.com/usrname1git/ClipShare/tree/801d1e63e7e7b226c777b605054b21ea820a74c4",
+      "title": "ClipShare",
+      "url": "https://github.com/usrname1git/ClipShare/blob/801d1e63e7e7b226c777b605054b21ea820a74c4/docs/engineering.md"
+    },
+    {
       "cover": "PHONEDASHBOARD",
       "description": "A private, read-only mobile overview of the workstation. Refreshing never starts a model or repairs a service; operational controls remain in explicit remote tools.",
       "id": "remote-dashboard",
