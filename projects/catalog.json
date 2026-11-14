@@ -150,7 +150,7 @@
     },
     {
       "cover": "CLIPSHAREFLOW",
-      "description": "Send a completed local image, video or audio file as a browser-friendly link. Native Windows intake, CPU media preparation, hash-bound publication and live share revocation turn a simple action into a controlled workflow. Illustration of the implementation in ClipShare PR1, not a live sharing or external-reachability demo.",
+      "description": "Send a completed local image, video or audio file as a browser-friendly link. Native Windows intake, CPU media preparation, hash-bound publication and live share revocation turn a simple action into a controlled workflow. The implementation is private; these links open public case-study notes and the illustration source, not a live sharing or external-reachability demo.",
       "id": "clipshare",
       "images": [
         {
@@ -163,9 +163,9 @@
           "width": 1440
         }
       ],
-      "source_url": "https://github.com/usrname1git/ClipShare/tree/801d1e63e7e7b226c777b605054b21ea820a74c4",
+      "source_url": "https://github.com/usrname1git/GodBrain/blob/51dd1d3d59b12782562b4c27a9df57f09ca853bc/godbrain_core/showcase/clipshare-workflow.html",
       "title": "ClipShare",
-      "url": "https://github.com/usrname1git/ClipShare/blob/801d1e63e7e7b226c777b605054b21ea820a74c4/docs/engineering.md"
+      "url": "https://github.com/usrname1git/GodBrain/blob/main/docs/Task1111.md#clipshare-case-study"
     },
     {
       "cover": "PHONEDASHBOARD",
