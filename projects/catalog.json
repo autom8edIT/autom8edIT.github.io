@@ -2,7 +2,7 @@
   "projects": [
     {
       "cover": "CMDSTATUS",
-      "description": "Workstation and AI control in one native Windows interface: model settings, core services, remote access, AirPlay receiver lifecycle and Dell hardware display controls. All Command Center pages are collected here. Screenshots are sanitized UI captures, not live readiness or playback guarantees.",
+      "description": "Workstation and AI control in one native Windows interface: model settings, read-only research with attachments, core services, remote access, AirPlay receiver lifecycle, Dell monitor controls and saved display layouts. Sanitized captures show the actual pages, not live readiness, model answers or hardware-change guarantees.",
       "id": "command-center",
       "images": [
         {
@@ -25,12 +25,12 @@
         },
         {
           "capture_kind": "sanitized-source-ui",
-          "description": "AirPlay on Windows: implemented asynchronous Start/Stop/Open and exact-process ownership controls. ShairportQt supplies the receiver and AirPlay transport. Private sender details omitted; no receiver action or audible-delivery test performed.",
-          "height": 320,
-          "id": "AIRPLAYCONTROLS",
-          "path": "assets/command-center/AIRPLAYCONTROLS.webp",
-          "sha256": "95a97a6f28a824b9dec41017ddc4f27937ef8aa37c9802e5af8a4302d6765934",
-          "width": 660
+          "description": "Actual Ask page: optional scope, read-only file and CPU OCR attachments, Research text mode, Send and answer area. Inputs and answer are empty; no files read, clipboard accessed, request sent or model started.",
+          "height": 779,
+          "id": "CMDASK",
+          "path": "assets/command-center/CMDASK.webp",
+          "sha256": "df900b2060a2df523d10e8584173abb336455cb16c3799d2c2e772d95194899f",
+          "width": 676
         },
         {
           "capture_kind": "sanitized-source-ui",
@@ -39,6 +39,15 @@
           "id": "MONITORCONTROLS",
           "path": "assets/command-center/MONITORCONTROLS.webp",
           "sha256": "7c401d6e13c8cf506d5067d14eeb979070843d856a6d3d507a1b0b0e69a9d1fa",
+          "width": 676
+        },
+        {
+          "capture_kind": "sanitized-source-ui",
+          "description": "Actual Display layouts page: saved-profile selection, capture, preview, apply, hotkey and recovery controls. Profile names and display details omitted; no layout discovery, hotkey registration, configuration write or hardware change performed.",
+          "height": 779,
+          "id": "DISPLAYLAYOUTS",
+          "path": "assets/command-center/DISPLAYLAYOUTS.webp",
+          "sha256": "d233223370a555df5e8df4293390d996ec7fd66c759fbae4512d4dee7360a509",
           "width": 676
         }
       ],
